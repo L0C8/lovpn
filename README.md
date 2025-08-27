@@ -1,6 +1,6 @@
-# OVPN-Bulker (C++ Version)
+# lovpn (C++ Version)
 
-A direct C++ port of the original Python **OVPN-Bulker** utility. This tool automates the import, management, and removal of multiple OpenVPN profiles using **NetworkManager** (`nmcli`). 
+A direct C++ port of the original Python **OVPN-Bulker** utility now called lovpn (Linux Open VPN). This tool automates the import, management, and removal of multiple OpenVPN profiles using **NetworkManager** (`nmcli`). 
 
 ## Features
 - Bulk import all `.ovpn` configuration files from a directory
@@ -21,19 +21,19 @@ g++ -std=c++17 -pthread ovpn_bulker.cpp -o ovpn-bulker
 
 ## Usage
 ```bash
-./ovpn-bulker <directory> <username> <password>   # Import all .ovpn files
-./ovpn-bulker list                                # Show imported VPNs
-./ovpn-bulker connect <vpn-name>                  # Connect to a VPN
-./ovpn-bulker disconnect <vpn-name>               # Disconnect a VPN
-./ovpn-bulker delete-all                          # Delete all VPNs
-./ovpn-bulker help                                # Show help message
+./lovpn <directory> <username> <password>   # Import all .ovpn files
+./lovpn list                                # Show imported VPNs
+./lovpn connect <vpn-name>                  # Connect to a VPN
+./lovpn disconnect <vpn-name>               # Disconnect a VPN
+./lovpn delete-all                          # Delete all VPNs
+./lovpn help                                # Show help message
 ```
 
 ## Example
 ```bash
-./ovpn-bulker ~/VPNs myuser mypass
-./ovpn-bulker list
-./ovpn-bulker connect work-vpn
+./lovpn ~/VPNs myuser mypass
+./lovpn list
+./lovpn connect work-vpn
 ```
 
 ## Notes
