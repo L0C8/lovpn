@@ -16,7 +16,7 @@ A direct C++ port of the original Python **OVPN-Bulker** utility now called lovp
 
 ## Build
 ```bash
-g++ -std=c++17 -pthread ovpn_bulker.cpp -o ovpn-bulker
+g++ -std=c++17 -pthread lovpn.cpp -o lovpn
 ```
 
 ## Usage
