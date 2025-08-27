@@ -18,6 +18,13 @@ A direct C++ port of the original Python **OVPN-Bulker** utility now called lovp
 ```bash
 g++ -std=c++17 -pthread lovpn.cpp -o lovpn
 ```
+```
+sudo mv lovpn /usr/local/bin/
+mkdir -p ~/bin
+mv lovpn ~/bin/
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
 
 ## Usage
 ```bash
